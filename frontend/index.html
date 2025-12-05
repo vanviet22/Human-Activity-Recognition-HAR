@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhận dạng hành động 🤖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="body_frame">
+    <h1>🤖 Nhận dạng hành động (Human Action Recognition)</h1>
+
+    <div class="container">
+      <!-- Chọn chế độ -->
+      <div class="mode-selector">
+        <button id="uploadMode" class="active">📁 Tải ảnh lên</button>
+        <button id="cameraMode">🎥 Mở camera</button>
+      </div>
+
+      <div class="two-column">
+        <!-- Cột trái: ảnh nguồn -->
+        <div class="image-column">
+          <!-- Upload ảnh -->
+          <div id="uploadSection" class="section">
+            <h3>Ảnh gốc</h3>
+            <div class="image-box">
+              <img id="previewImage" alt="Xem ảnh tải lên">
+              <video id="camera" autoplay style="display:none;"></video>
+            </div>
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="predictBtn">🔍 Nhận dạng</button>
+            <!-- <button id="captureBtn" style="display:none;">📸 Nhận dạng khung hình</button> -->
+            <p id="statusText"></p>
+          </div>
+        </div>
+
+        <!-- Cột phải: kết quả -->
+        <div class="image-column">
+          <h3>Kết quả nhận dạng</h3>
+          <div class="image-box">
+            <img id="resultImage" alt="Kết quả" style="display:none;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
