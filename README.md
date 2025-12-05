@@ -171,13 +171,14 @@ requirements.txt
 README.md
 
 🚀 6. Cài đặt & Chạy dự án
-1️⃣ Cài thư viện
+
+1️⃣ Cài thư viện:
 pip install -r requirements.txt
 
-2️⃣ Chạy backend FastAPI
+2️⃣ Chạy backend FastAPI:
 uvicorn backend.main:app --reload
 
-3️⃣ Mở giao diện web
+3️⃣ Mở giao diện web:
 frontend/index.html
 
 🖼 7. Kết quả
