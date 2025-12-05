@@ -123,7 +123,13 @@ ReduceLROnPlateau
 ModelCheckpoint
 
 Input: 160×160 crop
+
 Output: 15 lớp hành động
+
+Kết quả: 
+
+<img width="727" height="303" alt="image" src="https://github.com/user-attachments/assets/df68c6ff-7c3d-4999-90d4-40a058fb21a4" />
+
 
 🏗 4. Kiến trúc tổng thể
 Ảnh / Camera
