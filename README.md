@@ -4,7 +4,7 @@ YOLOv8n Detection + EfficientNetB1 Classification + FastAPI + Web UI
 
 📖 1. Giới thiệu
 
-Đề tài xây dựng hệ thống nhận dạng hành động của con người trong ảnh tĩnh, kết hợp mô hình phát hiện đối tượng (object detection) và mô hình phân loại hành động (action classification).
+      Đề tài xây dựng hệ thống nhận dạng hành động của con người trong ảnh tĩnh, kết hợp mô hình phát hiện đối tượng (object detection) và mô hình phân loại hành động (action classification).
 
 Pipeline tổng quan:
 
@@ -149,15 +149,25 @@ frontend/ – HTML/CSS/JS
 
 📂 5. Cấu trúc thư mục
 backend/
+
 │── main.py               # FastAPI server
+
 │── recognize.py          # YOLO detection, clustering, action recognition
+
 │── output_model/         # EfficientNetB1 đã train
+
 │── training_process/     # Notebook huấn luyện
+
 frontend/
+
 │── index.html
+
 │── style.css
+
 │── script.js
+
 requirements.txt
+
 README.md
 
 🚀 6. Cài đặt & Chạy dự án
