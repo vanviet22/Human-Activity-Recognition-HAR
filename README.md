@@ -18,7 +18,7 @@ Hệ thống hoạt động tốt trên ảnh tải lên và camera realtime.
 
 📊 2. Bộ dữ liệu
 
-Nguồn: Kaggle – Human Action Recognition (HAR)
+Nguồn: Kaggle – Human Action Recognition (HAR). ULR : https://www.kaggle.com/code/kirollosashraf/human-action-recognition-har
 
 💠 Thông tin dữ liệu:
 
