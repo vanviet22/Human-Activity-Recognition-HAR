@@ -105,28 +105,40 @@
 
 
 ### 🏗 4. Kiến trúc tổng thể
+
 Ảnh / Camera
+
       ↓
+	  
 YOLOv8n (Phát hiện người + đồ vật)
+
       ↓
+	  
 Cluster person/object boxes
+
       ↓
+	  
 Crop vùng cụm người
+
       ↓
+	  
 EfficientNetB1 (Phân loại hành động)
+
       ↓
+	  
 Trả kết quả
 
 
-Thành phần chính:
+	- Thành phần chính:
 
-backend/recognize.py – YOLO + cluster + crop + phân loại
+		+ backend/recognize.py – YOLO + cluster + crop + phân loại
 
-backend/main.py – FastAPI server
+		+ backend/main.py – FastAPI server
 
-frontend/ – HTML/CSS/JS
+		+ frontend/ – HTML/CSS/JS
 
 ### 📂 5. Cấu trúc thư mục
+
 backend/
 
 │── main.py               # FastAPI server
@@ -151,21 +163,18 @@ README.md
 
 ### 🚀 6. Cài đặt & Chạy dự án
 
-1️⃣ Cài thư viện:
-pip install -r requirements.txt
+1️⃣ Cài thư viện: pip install -r requirements.txt
 
-2️⃣ Chạy backend FastAPI:
-uvicorn backend.main:app --reload
+2️⃣ Chạy backend FastAPI: uvicorn backend.main:app --reload
 
-3️⃣ Mở giao diện web:
-frontend/index.html
+3️⃣ Mở giao diện web: frontend/index.html
 
 ### 🖼 7. Kết quả
 
-Nhận dạng ảnh và camera realtime
+	- Nhận dạng ảnh và camera realtime
 
-Phân loại tốt 15 hành động
+	- Phân loại tốt 15 hành động
 
-Hoạt động ổn định với trường hợp nhiều người + nhiều đồ vật
+	- Hoạt động ổn định với trường hợp nhiều người + nhiều đồ vật
 
 Clustering cải thiện độ chính xác với các hành động nhóm
